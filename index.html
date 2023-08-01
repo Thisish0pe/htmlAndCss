@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For a Traveler(s)</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=IBM+Plex+Sans+KR:wght@100;200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/061f4f01cc.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JavaScript/scroll.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header-head">
+      <h1 class="header-title">
+        <a href="./index.html">For a Traveler(s)</a>
+      </h1>
+      <ul class="header-click">
+        <li class="on"><a href="#home">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#chat">Chatbot</a></li>
+        <li><a id="login-btn">Login</a></li>
+      </ul>
+      <a class="header-toggleBtn">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+    </div>
+    <!-- //header-->
+    <!-- login -->
+    <div id="login-modal">
+      <a class="modal-close-btn">닫기</a>
+      <div class="login-container">
+        <h2 class="title">로그인</h2>
+        <p class="description">아이디와 비밀번호를 입력하고 로그인하세요</p>
+        <form class="login">
+          <div>
+            <label class="label-width" for="user-id">아이디</label>
+            <input type="text" id="user-id" name="userId" required />
+          </div>
+          <div>
+            <label class="label-width" for="user-pw">비밀번호</label>
+            <input type="password" id="user-pw" name="userPw" required />
+          </div>
+          <div>
+            <input type="checkbox" id="save-id" name="saveId" />
+            <label for="save-id">아이디 저장</label>
+          </div>
+          <button class="submit-button" type="submit">로그인</button>
+          <div class="login-join-out">
+            <a class="login-join" href="./join.html">회원가입</a>
+            <button class="login-out" type="button">로그아웃</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- //login -->
+    <!-- home -->
+    <div id="contents">
+      <div id="home">
+        <header
+          class="container bg-img"
+          style="background-image: url('./image/header_sky.jpg')"
+        >
+          <div class="home-logo">
+            <img
+              class="logo-img"
+              src="./image/logo.jpg"
+              alt="for a travelers logo"
+            />
+          </div>
+        </header>
+      </div>
+      <!-- //home -->
+      <!-- about us -->
+      <div id="about">
+        <div class="container box">
+          <h1 class="about-title">ABOUT US</h1>
+          <h2 class="about-subtitle">우리 그러므로 끓는다.</h2>
+          <p class="about-contents">
+            가진 청춘 거친 무한한 그들은 더운지라 무엇을 끓는 것이다. 되려니와,
+            착목한는 힘차게 그림자는 구하지 있는 살았으며, 이상, 것이다. 청춘의
+            우리의 우리 약동하다. 무엇을 따뜻한 끓는 그와 인간이 있는 것은
+            미묘한 이것이다. 이상, 과실이 하는 방지하는 끓는다.
+          </p>
+          <p class="about-contents">
+            끓는 시들어 거선의 힘있다. 힘차게 영락과 뜨거운지라, 보라. 얼음
+            대중을 이상의 커다란 끝까지 싶이 천하를 부패뿐이다. 든 우리 힘차게
+            부패뿐이다. 것은 청춘 힘차게 따뜻한 봄바람이다. 무한한 이 우는 눈이
+            크고 아름답고 싶이 쓸쓸한 커다란 아니다. 않는 발휘하기 할지라도 길을
+            얼음에 황금시대다.
+          </p>
+        </div>
+      </div>
+      <!-- //about us -->
+      <!-- chat -->
+      <div id="chat">
+        <header
+          class="container bg-img"
+          style="background-image: url('./image/header_mountain.jpg')"
+        >
+          <div class="home-logo">
+            <p class="chat-title">Let's make a plan together!</p>
+          </div>
+        </header>
+        <div class="chat-container">
+          <div class="chat-box chat-put">
+            <h2 class="chat-head">여행 일정 입력</h2>
+            <form class="chat-form" action="post">
+              <div>
+                <label class="chat-label" for="chat-city"
+                  >어디로 여행하시나요?</label
+                >
+                <input
+                  type="text"
+                  id="chat-city"
+                  name="chatCity"
+                  placeholder="예: 대한민국 서울"
+                  required
+                />
+              </div>
+              <div>
+                <label class="chat-label" for="chat-date"
+                  >여행 기간을 입력해 주세요.</label
+                >
+                <input
+                  type="text"
+                  id="chat-date"
+                  name="chatDate"
+                  placeholder="예: 3박 4일"
+                  required
+                />
+              </div>
+              <div>
+                <label class="chat-label" for="chat-theme"
+                  >희망하시는 여행 테마를 입력해 주세요.</label
+                >
+                <input
+                  type="text"
+                  id="chat-theme"
+                  name="chatTheme"
+                  placeholder="예: 미술관 투어, 맛집 투어 등"
+                  required
+                />
+              </div>
+              <fieldset class="chat-field">
+                <legend>여행 중 자동차를 이용하시나요?</legend>
+                <ul>
+                  <li>
+                    <input
+                      type="radio"
+                      name="car-option"
+                      value="yes"
+                      id="chat-yes"
+                      required
+                    />
+                    <label for="chat-yes">예</label>
+                  </li>
+                  <li>
+                    <input
+                      type="radio"
+                      name="car-option"
+                      value="no"
+                      id="chat-no"
+                      required
+                    />
+                    <label for="chat-no">아니요</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <div>
+                <button
+                  class="submit-button button"
+                  type="submit"
+                  onclick="changeCursor();"
+                >
+                  일정 생성
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="chat-box chat-return">
+            <div class="loader-box">
+              <h2 class="chat-head">여행 일정</h2>
+              <!-- loader -->
+              <div class="loader"></div>
+              <textarea
+                class="chat-textarea"
+                name="content"
+                id="chat-content"
+                cols="30"
+                rows="10"
+                placeholder="여행 일정 입력 후 '일정생성'버튼을 누르면 여행 일정이 자동으로 생성됩니다 :)"
+                readonly
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //chat -->
+    <!-- chatlist -->
+    <div id="getlist"></div>
+    <!-- //chatlist -->
+    <!-- footer -->
+    <p class="footer-p">Copyright &copy; For a Traveler(s) 2023</p>
+    <!-- //footer -->
+    <script src="./JavaScript/data.js"></script>
+    <script src="./JavaScript/menu.js"></script>
+    <script src="./JavaScript/login.js"></script>
+    <script src="./JavaScript/chat.js"></script>
+    <script src="./JavaScript/mousecursor.js"></script>
+    <script src="./JavaScript/loader.js"></script>
+  </body>
+</html>
