@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For a Traveler(s)</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/join.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=IBM+Plex+Sans+KR:wght@100;200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/061f4f01cc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header-head">
+      <h1 class="header-title">
+        <a href="./index.html">For a Traveler(s)</a>
+      </h1>
+      <ul class="header-click">
+        <li class="on"><a href="./index.html#home">Home</a></li>
+        <li><a href="./index.html#about">About us</a></li>
+        <li><a href="./index.html#chat">Chatbot</a></li>
+        <li><a id="login-btn">Login</a></li>
+      </ul>
+      <a class="header-toggleBtn">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+    </div>
+    <!-- //header-->
+    <!-- login -->
+    <div id="login-modal">
+      <a class="modal-close-btn">닫기</a>
+      <div class="login-container">
+        <h2 class="title">로그인</h2>
+        <p class="description">아이디와 비밀번호를 입력하고 로그인하세요</p>
+        <form class="login">
+          <div>
+            <label class="label-width" for="user-id">아이디</label>
+            <input type="text" id="user-id" name="userId" required />
+          </div>
+          <div>
+            <label class="label-width" for="user-pw">비밀번호</label>
+            <input type="password" id="user-pw" name="userPw" required />
+          </div>
+          <div>
+            <input type="checkbox" id="save-id" name="saveId" />
+            <label for="save-id">아이디 저장</label>
+          </div>
+          <button class="submit-button" type="submit">로그인</button>
+          <div class="login-join-out">
+            <a class="login-join" href="./join.html">회원가입</a>
+            <button class="login-out" type="button">로그아웃</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- //login -->
+    <!-- join -->
+    <div class="main">
+      <div class="join-container">
+        <div class="join-media">
+          <h2 class="join-head">회원가입</h2>
+          <p class="join-p">원활한 서비스 이용을 위해 회원가입을 해주세요.</p>
+          <form class="join-form" action="post">
+            <div>
+              <label class="join-label" for="user-id">아이디</label>
+              <input type="text" id="user-id" name="userId" required />
+            </div>
+            <div>
+              <label class="join-label" for="user-email">이메일</label>
+              <input type="email" id="user-email" name="userEmail" required />
+            </div>
+            <div>
+              <label class="join-label" for="user-pw">비밀번호</label>
+              <input type="password" id="user-pw" name="userPw" required />
+            </div>
+            <div>
+              <label class="join-label" for="user-nickname">닉네임</label>
+              <input
+                type="text"
+                id="user-nickname"
+                name="userNickname"
+                required
+              />
+            </div>
+            <fieldset class="join-field">
+              <legend class="join-gender">성별</legend>
+              <ul>
+                <li>
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="male"
+                    id="male"
+                    required
+                  />
+                  <label for="male">남성</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="females"
+                    id="female"
+                  />
+                  <label for="female">여성</label>
+                </li>
+                <li>
+                  <input type="radio" name="gender" value="no" id="no" />
+                  <label for="no">선택 안함</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="join-field">
+              <legend class="join-country">희망 여행 국가</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="korea" id="korea" />
+                  <label for="korea">한국</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="usa" id="usa" />
+                  <label for="usa">미국</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="indian" id="indian" />
+                  <label for="indian">인도</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="japan" id="japan" />
+                  <label for="japan">일본</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="eu" id="eu" />
+                  <label for="eu">유럽 국가</label>
+                </li>
+              </ul>
+            </fieldset>
+            <div>
+              <button class="submit-button" type="submit" class="button">
+                회원가입
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- //join -->
+    <!-- footer -->
+    <div class="main"></div>
+    <p class="footer-p">Copyright &copy; For a Traveler(s) 2023</p>
+    <!-- //footer -->
+    <script src="./JavaScript/menu.js"></script>
+    <script src="./JavaScript/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+.join-container {
+  width: 100%;
+  padding-top: 15%;
+  padding-bottom: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.join-head,
+.join-p {
+  text-align: center;
+}
+.join-p {
+  margin: 20px 0;
+}
+.join-form {
+  width: 360px;
+}
+.join-form > div {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.join-label {
+  display: inline-block;
+  width: 70px;
+}
+[type="text"],
+[type="password"],
+[type="email"] {
+  width: 290px;
+  height: 32px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.join-field {
+  border: 0;
+  margin: 20px 0;
+}
+.join-field legend {
+  float: left;
+}
+legend {
+  padding: 0;
+  margin: 0;
+  width: 95px;
+}
+.join-field ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+}
+.field ul li {
+  display: inline-block;
+}
+[type="checkbox"]:checked + label {
+  font-weight: bold;
+}
+/* footer */
+.footer-p {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+}
+/* //footer */
+/* media */
+@media screen and (max-width: 800px) {
+  .join-container {
+    padding: 100px 0;
+  }
+  .join-form {
+    width: 300px;
+  }
+  .join-label {
+    width: 75px;
+  }
+  .join-field ul {
+    gap: 6px;
+  }
+}
+/* //media */
